@@ -1,0 +1,197 @@
+/* main content styles */
+
+body {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: Georgia, serif;
+  color: #3a3b3a;
+  font-weight: 600;
+}
+
+a {
+color: #019483;
+}
+
+a:focus, a:hover {
+  color: #004840;
+}
+
+.breadcrumb * a {
+  color: #019483;
+}
+
+.btn-primary {
+  background-color: #019483;
+  border-color: #019483;
+  font-weight: 600;
+}
+
+.pagination>.active>a {
+  background-color: #019483;
+  border-color: #019483;
+  color: white;
+}
+
+.pagination>li>a, .pagination>li>span {
+  color: #019483;
+}
+
+.id-label {
+  font-family: Georgia; serif;
+}
+
+.component {
+  font-family: Georgia; serif;
+}
+
+.record-type-badge {
+  font-family: Georgia; serif;
+}
+
+.inline-label {
+  font-family: Georgia; serif;
+}
+
+/* Collection View - changing colors and adjusting spacing */
+
+.tabbing.nav-pills>li>a {
+  color: #ffffff;
+  background-color: #019483;
+  margin-left: 0px;
+}
+
+
+
+.tabbing.nav-pills>li>a.active {
+  color: #ffffff;
+  background-color: #004840;
+}
+
+.tabbing.nav-pills>li.disabled>a {
+  opacity: .6;
+}
+
+.tabbing.nav-pills > li > a.disabled-nav-pill:hover {
+    background-color: #019483;
+    opacity: .6;
+}
+
+.acc_button, .panel {
+  margin-bottom: 10px;
+}
+
+#sidebar{
+  margin-left: 20px;
+}
+
+/* Header + Nav Bar */
+
+.navbar-default .navbar-nav>li>a {
+  color: #ffffff;
+  font-weight: 600;
+  text-align: center;
+  background-color: rgba(0,0,0,0);
+  transition: background-color 0.5s ease;
+  padding: 15px 30px;
+}
+
+
+.navbar-default .navbar-nav>li>a:hover {
+  text-decoration: none;
+  background-color: #35CCB9;
+  color: #ffffff;
+}
+
+.top-bar{
+  background-color: #189485 !important;
+  height: 50px;
+  border: 0px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+#header {
+  background: linear-gradient(to bottom,rgba(24,61,57),rgba(184,222,218) 100%;);
+  height: 125px;
+  padding-top: 1 rem;
+  padding-bottom: 5rem;
+  border-bottom: 0px !important;
+  border-top: 0px !important;
+  }
+
+
+#header .h1, #header .h1 a {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+
+#header .h1 a:hover {
+  color: #F2F2F2;
+  text-decoration: none;
+}
+
+#header .logo {
+  height: 85px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#header>.row {
+  border-bottom-style: none;
+}
+
+/* mobile only */
+
+.mobile-archives-link {
+  background-color: #2f4d48;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  font-weight: 600;
+  position: relative;
+}
+
+
+.mobile-archives-link > a{
+  color: #ffffff;
+
+}
+
+/* Footer Styles */
+
+#barnard-footer, #barnard-footer a {
+  color: white;
+  font-size: 16px;
+}
+
+#barnard-footer a:hover {
+  text-decoration: underline;
+}
+
+#barnard-footer h2 {
+  font-size: 32px;
+  color: #f4e482;
+}
+
+#barnard-footer h3 {
+  font-size: 20px;
+  color: #f4e482;
+}
+
+.footer-list li {
+    margin-top: 16px;
+  }
+
+.footer-list {
+  list-style: none;
+}
+
+#barnard-footer{
+  background-image: url(http://testcollections.barnard.edu/public/assets/barnard_footerbg.jpg);
+  background-size: cover;
+}

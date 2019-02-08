@@ -1,0 +1,29 @@
+
+<%= render partial: 'shared/simple_search', locals: {
+  :search_url => "/search",
+  :title => t('archive._plural'),
+  :limit_options => [
+        ["#{t('actions.search')} #{t('search-limits.all')}",'']
+      ],
+  :field_options => [
+        ["#{t('search_results.filter.fullrecord')}",'']
+       ]
+    }  
+%>
+
+    <div class="row">
+      <div class="col-sm-4">
+<h3><%= t('brand.welcome_aboutheader') %></h3>
+<div> <%= t('brand.welcome_about').html_safe %> </div>
+      </div>
+
+      <div class="col-sm-4">
+<h3><%= t('brand.welcome_requestheader') %></h3>
+<div> <%= t('brand.welcome_request').html_safe %> </div>
+      </div>
+
+      <div class="col-sm-4">
+<h2><%= t('brand.welcome_searchtipsheader') %></h2>
+<div> <%= t('brand.welcome_searchtips').html_safe %> </div>
+      </div>
+</div>
