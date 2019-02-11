@@ -3,6 +3,7 @@
 body {
   font-size: 16px;
   font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -29,11 +30,25 @@ a:focus, a:hover {
   font-weight: 600;
 }
 
-.btn-primary:hover {
+.btn-primary:hover, .btn-primary:active:hover, .btn-primary:active:focus, {
   background-color: #004840;
   border-color: #019483;
   font-weight: 600;
 }
+
+.btn-secondary {
+  background-color: #ffffff;
+  border-color: #004840;
+  color: #019483;
+  }
+
+.btn-secondary:hover {
+  background-color: #ffffff;
+  border-color: #019483;
+  color: #004840;
+  }
+
+/*Search results pages*/
 
 .pagination>.active>a {
   background-color: #019483;
@@ -49,6 +64,25 @@ a:focus, a:hover {
   font-family: Georgia, serif;
 }
 
+.recordrow {
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  background-color: #fbfbfb
+}
+
+.more-facets .btn, .less
+
+/*Related to changing body background color*/
+
+.tabbing.navbar-default {
+  background-color: #f2f2f2;
+  border-color: #f2f2f2;
+}
+
+.panel-default>.panel-heading {
+  background-color: #fbfbfb;
+}
 
 /* Collection View - changing colors and adjusting spacing */
 
@@ -116,6 +150,9 @@ a:focus, a:hover {
   .top-bar {
     justify-content: space-evenly;
   }
+  .mobile-only-item {
+    display: none;
+  }
 }
 
 #header {
@@ -166,24 +203,12 @@ a:focus, a:hover {
   margin-left: 50px;
 }
 
+.mobile-only-item>a {
+  color: #BFEFFF;
+}
 
 .navbar-toggle .icon-bar {
   background-color: #ffffff;
-}
-
-
-.mobile-archives-link {
-  background-color: #2f4d48;
-  width: 100%;
-  height: 50px;
-  text-align: center;
-  font-weight: 600;
-  position: relative;
-}
-
-
-.mobile-archives-link > a{
-  color: #ffffff;
 }
 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
@@ -235,7 +260,7 @@ a:focus, a:hover {
   background-size: cover;
   margin-top: 3em;
   width: 100%;
-} 
+}
 
 #barnard-footer > .row {
   padding: 0 3em 0 3em;
