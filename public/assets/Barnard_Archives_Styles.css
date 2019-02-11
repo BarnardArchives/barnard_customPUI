@@ -248,3 +248,9 @@ a:focus, a:hover {
   display: block;
   width: 218px;
 }
+
+  /* Advanced Search - fixing sizing on chrome */
+
+#from_year0, #to_year0 {
+  min-width: 88px;
+}
