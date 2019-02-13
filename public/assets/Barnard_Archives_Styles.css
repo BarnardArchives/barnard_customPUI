@@ -60,6 +60,10 @@ a:focus, a:hover {
   color: #019483;
 }
 
+.pagination>li>a:hover {
+  color: #004840;
+}
+
 .identifier .id-label, .component, .record-type-badge, .inline-label  {
   font-family: Georgia, serif;
 }
@@ -104,11 +108,18 @@ a:focus, a:hover {
 
 .tabbing.nav-pills>li>a:hover {
   background-color: #35CCB9;
+  cursor: pointer !important
 }
 
+
+.tabbing.nav-pills>li.disabled>a.active:hover, .tabbing.nav-pills>li>a.active:hover   {
+  background-color: #0048440;
+}
+
+
 .nav>li.disabled>a, .nav>li.disabled>a:hover, .nav>li.disabled>a:focus {
+  background-color: #004840;
   opacity: .4;
-  cursor: pointer !important;
 }
 
 .acc_button, .panel {
