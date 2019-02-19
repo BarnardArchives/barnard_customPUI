@@ -9,7 +9,7 @@ body {
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: Georgia, serif;
   color: #3a3b3a;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 a {
@@ -38,13 +38,13 @@ a:focus, a:hover {
 
 .btn-secondary {
   background-color: #ffffff;
-  border-color: #004840;
+  border-color: #019483;
   color: #019483;
   }
 
 .btn-secondary:hover {
   background-color: #ffffff;
-  border-color: #019483;
+  border-color: #004840;
   color: #004840;
   }
 
@@ -72,10 +72,12 @@ a:focus, a:hover {
   padding: 1rem;
   border-radius: 4px;
   margin-bottom: 1rem;
-  background-color: #fbfbfb
+  background-color: #fbfbfb;
 }
 
-.more-facets .btn, .less
+.more-facets .btn, .less .btn {
+  color: #019483;
+}
 
 /*Related to changing body background color*/
 
@@ -90,40 +92,40 @@ a:focus, a:hover {
 
 /* Collection View - changing colors and adjusting spacing */
 
+.page_action {
+  color: #019483;
+}
+
+.page_action:hover {
+  color: #004840;
+}
+
 .tabbing.nav-pills>li>a {
   color: #ffffff;
   background-color: #019483;
   margin-left: 0px;
 }
 
-.tabbing.nav-pills>li>a.active {
+.tabbing.nav-pills>li>a.active, .tabbing.nav-pills>li.disabled>a.active, .tabbing.nav-pills>li.disabled>a.active:hover, .tabbing.nav-pills>li>a.active:hover {
   color: #ffffff;
   background-color: #004840;
-}
-
-.tabbing.nav-pills>li.disabled>a.active {
   opacity: 1;
+  cursor: pointer !important;
 }
-
 
 .tabbing.nav-pills>li>a:hover {
-  background-color: #35CCB9;
-  cursor: pointer !important
+  background-color: #004840;
+  opacity: .8;
+  cursor: pointer !important;
 }
-
-
-.tabbing.nav-pills>li.disabled>a.active:hover, .tabbing.nav-pills>li>a.active:hover   {
-  background-color: #0048440;
-}
-
 
 .nav>li.disabled>a, .nav>li.disabled>a:hover, .nav>li.disabled>a:focus {
   background-color: #004840;
   opacity: .4;
 }
 
-.acc_button, .panel {
-  margin-bottom: 10px;
+.acc_button, .panel-group .panel{
+  margin-bottom: .625rem;
 }
 
 .acc_holder, .subnote {
@@ -167,9 +169,9 @@ a:focus, a:hover {
 }
 
 #header {
-  background: -webkit-linear-gradient(rgba(24,61,57, 1), rgba(184,222,218, 1));
-  background: -o-linear-gradient(rgba(24,61,57, 1), rgba(184,222,218, 1));
-  background: linear-gradient(rgba(24,61,57, 1), rgba(184,222,218, 1));
+  background: -webkit-linear-gradient(rgba(24,61,57, 1), rgba(122,194,187, 1));
+  background: -o-linear-gradient(rgba(24,61,57, 1), rgba(122,194,187, 1));
+  background: linear-gradient(rgba(24,61,57, 1), rgba(122,194,18, 1));
   height: 125px;
   padding-top: 1 rem;
   padding-bottom: 5rem;
@@ -257,7 +259,6 @@ a:focus, a:hover {
 
 .footer-list {
   list-style: none;
-  margin-top: -10px;
   padding: 0;
 }
 
@@ -274,7 +275,7 @@ a:focus, a:hover {
 }
 
 #barnard-footer > .row {
-  padding: 0 3em 0 3em;
+  padding: 0 4em;
 }
 
 #copyright {
