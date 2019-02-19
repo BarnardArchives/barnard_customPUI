@@ -3,12 +3,13 @@
 body {
   font-size: 16px;
   font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: Georgia, serif;
   color: #3a3b3a;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 a {
@@ -29,11 +30,25 @@ a:focus, a:hover {
   font-weight: 600;
 }
 
-.btn-primary:hover {
+.btn-primary:hover, .btn-primary:active:hover, .btn-primary:active:focus, {
   background-color: #004840;
   border-color: #019483;
   font-weight: 600;
 }
+
+.btn-secondary {
+  background-color: #ffffff;
+  border-color: #019483;
+  color: #019483;
+  }
+
+.btn-secondary:hover {
+  background-color: #ffffff;
+  border-color: #004840;
+  color: #004840;
+  }
+
+/*Search results pages*/
 
 .pagination>.active>a {
   background-color: #019483;
@@ -45,12 +60,45 @@ a:focus, a:hover {
   color: #019483;
 }
 
+.pagination>li>a:hover {
+  color: #004840;
+}
+
 .identifier .id-label, .component, .record-type-badge, .inline-label  {
   font-family: Georgia, serif;
 }
 
+.recordrow {
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  background-color: #fbfbfb;
+}
+
+.more-facets .btn, .less .btn {
+  color: #019483;
+}
+
+/*Related to changing body background color*/
+
+.tabbing.navbar-default {
+  background-color: #f2f2f2;
+  border-color: #f2f2f2;
+}
+
+.panel-default>.panel-heading {
+  background-color: #fbfbfb;
+}
 
 /* Collection View - changing colors and adjusting spacing */
+
+.page_action {
+  color: #019483;
+}
+
+.page_action:hover {
+  color: #004840;
+}
 
 .tabbing.nav-pills>li>a {
   color: #ffffff;
@@ -58,27 +106,26 @@ a:focus, a:hover {
   margin-left: 0px;
 }
 
-.tabbing.nav-pills>li>a.active {
+.tabbing.nav-pills>li>a.active, .tabbing.nav-pills>li.disabled>a.active, .tabbing.nav-pills>li.disabled>a.active:hover, .tabbing.nav-pills>li>a.active:hover {
   color: #ffffff;
   background-color: #004840;
-}
-
-.tabbing.nav-pills>li.disabled>a.active {
   opacity: 1;
-}
-
-
-.tabbing.nav-pills>li>a:hover {
-  background-color: #35CCB9;
-}
-
-.nav>li.disabled>a, .nav>li.disabled>a:hover, .nav>li.disabled>a:focus {
-  opacity: .4;
   cursor: pointer !important;
 }
 
-.acc_button, .panel {
-  margin-bottom: 10px;
+.tabbing.nav-pills>li>a:hover {
+  background-color: #004840;
+  opacity: .8;
+  cursor: pointer !important;
+}
+
+.nav>li.disabled>a, .nav>li.disabled>a:hover, .nav>li.disabled>a:focus {
+  background-color: #004840;
+  opacity: .4;
+}
+
+.acc_button, .panel-group .panel{
+  margin-bottom: .625rem;
 }
 
 .acc_holder, .subnote {
@@ -116,12 +163,15 @@ a:focus, a:hover {
   .top-bar {
     justify-content: space-evenly;
   }
+  .mobile-only-item {
+    display: none;
+  }
 }
 
 #header {
-  background: -webkit-linear-gradient(rgba(24,61,57, 1), rgba(184,222,218, 1));
-  background: -o-linear-gradient(rgba(24,61,57, 1), rgba(184,222,218, 1));
-  background: linear-gradient(rgba(24,61,57, 1), rgba(184,222,218, 1));
+  background: -webkit-linear-gradient(rgba(24,61,57, 1), rgba(122,194,187, 1));
+  background: -o-linear-gradient(rgba(24,61,57, 1), rgba(122,194,187, 1));
+  background: linear-gradient(rgba(24,61,57, 1), rgba(122,194,18, 1));
   height: 125px;
   padding-top: 1 rem;
   padding-bottom: 5rem;
@@ -166,24 +216,12 @@ a:focus, a:hover {
   margin-left: 50px;
 }
 
+.mobile-only-item>a {
+  color: #BFEFFF;
+}
 
 .navbar-toggle .icon-bar {
   background-color: #ffffff;
-}
-
-
-.mobile-archives-link {
-  background-color: #2f4d48;
-  width: 100%;
-  height: 50px;
-  text-align: center;
-  font-weight: 600;
-  position: relative;
-}
-
-
-.mobile-archives-link > a{
-  color: #ffffff;
 }
 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
@@ -221,7 +259,6 @@ a:focus, a:hover {
 
 .footer-list {
   list-style: none;
-  margin-top: -10px;
   padding: 0;
 }
 
@@ -235,10 +272,10 @@ a:focus, a:hover {
   background-size: cover;
   margin-top: 3em;
   width: 100%;
-} 
+}
 
 #barnard-footer > .row {
-  padding: 0 3em 0 3em;
+  padding: 0 4em;
 }
 
 #copyright {
