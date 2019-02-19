@@ -21,24 +21,28 @@
 
 en:
   brand:
-    title: ArchivesSpace Public Interface
+    title: Barnard Archives Finding Aids
     title_link_text: Return to the ArchivesSpace homepage
     home: Home
     welcome_head: Welcome to ArchivesSpace
     welcome_message: |
                      <p>Search across our collections, digital materials, and more.</p>
     welcome_search_label: "Find what you're looking for:"
-    welcome_page_title: ArchivesSpace Public Interface
+    welcome_page_title: Archives Finding Aides
     welcome_aboutheader: About
-    welcome_about: About Us info goes here
+    welcome_about: <p>Use this site to search over finding aids for collections at the Barnard Archives and Special Collections. Finding aids describe the creation, content, context, and arrangement of archival materials, allowing users to identify and request materials relevant to their research.</p>
+    <p>Archival collections as well as other resources at the Barnard Archives (including rare books and periodicals, many of which are not described in finding aids) are searchable <a href="https://clio.columbia.edu/">through CLIO.</a></p>
+    <p>Digital archives materials are searchable through our <a href="https://digitalcollections.barnard.edu">Digital Collections.</a></p>
     welcome_requestheader: Requesting Archives
-    welcome_request: Requesting info goes here
+    welcome_request: <p>Please contact us at archives@barnard.edu a week in advance of any planned visits to the Archives, including in your message the collection and boxes you want to use. Please feel free to contact us if you need assistance selecting materials to request or planning your visit to the Archives.</p>
+    <p>The Barnard Archives and Special Collections are located room 423 of the Milstein Center for Teaching and Learning. We are open Monday through Friday, 10:30 am-5:30 pm. For more information, please see our <a href="https://archives.barnard.edu/about-us/services-policies">services
+    and policies page.</a></p>
     welcome_searchtipsheader: Search Tips
-    welcome_searchtips: Search tips info goes here
+    welcome_searchtips: <p>In addition to search, you can also browse an overview list of our <a href="http://collections.barnard.edu/public/classifications">collecting areas</a> (also known as record groups), <a href ="http://collections.barnard.edu/public/repositories/resources">individual collections</a>, and lists of <a href="http://collections.barnard.edu/public/subjects">topical subjects</a> and <a href="http://collections.barnard.edu/public/agents">names</a> associated with our collections.</p>
 
   actions:
     search: Search
-    search_header: Search The Archives
+    search_header: Search Archives Finding Aids
     search_within: Search within results
     search_in: "Search %{type}"
     new_search: New Search
