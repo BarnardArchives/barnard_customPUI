@@ -103,3 +103,11 @@ function new_button($row, show_add) {
     $add.find("button").click(fn_addSearchRow);
     return true;
 }
+
+$(function( ) {
+    $('#submit_search').on('click',
+        function( e ) {
+            $("input[name='from_year[]']").val($("input[id='from_year_all'").val());
+            $("input[name='to_year[]']").val($("input[id='to_year_all").val());
+        } );
+});

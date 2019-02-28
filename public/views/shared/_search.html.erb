@@ -16,6 +16,8 @@
       <%= label_tag("op#{i}", t('advanced_search.operator_label'), :class => 'sr-only') %>
       <%= select_tag('op[]', options_for_select(Search.get_boolean_opts, @search[:op][i]), disabled: (i == 0), :id => "op#{i}",:class=> 'form-control' + (i == 0 ? ' hidden' : '')) %>
       <%= hidden_field_tag('op[]','', :id => 'op_') if i == 0 %>
+      <%= hidden_field_tag('from_year[]', '', :id=>"from_year#{i}") %>
+      <%= hidden_field_tag('to_year[]', '', :id => "to_year#{i}") %>
     </div>
     <div class="<%= i == 0 ? "col-sm-3" : "col-sm-6" %> form-group form-inline">
       <%= label_tag(:"q#{i}", t('navbar.search_placeholder'),:class => 'sr-only repeats') %>
@@ -38,13 +40,13 @@
   <div class="row search_dates_row complete_search" id="search_dates_row">
     <div class="col-sm-5 form-group form-inline">
       <%= label_tag("from_year0", "#{t('search_results.filter.from_year')}", :class => 'sr-only repeats') %>
-      <%= text_field_tag('from_year[]', @search[:from_year][0], :size => 10,:maxlength => 4, :id=>"from_year0",
+      <%= text_field_tag('from_year[]', @search[:from_year][0], :size => 10,:maxlength => 4, :id=>"from_year_all",
            :placeholder => t('search_results.filter.from_year_placeholder'), :class=>'form-control repeats') %>
 
       <span class="inline-label">to</span>
 
       <%= label_tag("to_year0", "#{t('search_results.filter.to_year')}", :class=> 'sr-only repeats') %>
-      <%= text_field_tag('to_year[]', @search[:to_year][0], :size => 10, :maxlength => 4, :id => "to_year0", 
+      <%= text_field_tag('to_year[]', @search[:to_year][0], :size => 10, :maxlength => 4, :id => "to_year_all", 
            :placeholder => t('search_results.filter.to_year_placeholder'), :class=> 'form-control repeats') %>
     </div>
   </div>
