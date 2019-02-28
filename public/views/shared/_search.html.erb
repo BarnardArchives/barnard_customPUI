@@ -16,6 +16,8 @@
       <%= label_tag("op#{i}", t('advanced_search.operator_label'), :class => 'sr-only') %>
       <%= select_tag('op[]', options_for_select(Search.get_boolean_opts, @search[:op][i]), disabled: (i == 0), :id => "op#{i}",:class=> 'form-control' + (i == 0 ? ' hidden' : '')) %>
       <%= hidden_field_tag('op[]','', :id => 'op_') if i == 0 %>
+      <%= hidden_field_tag('from_year[]', '', :id=>"from_year#{i}") %>
+      <%= hidden_field_tag('to_year[]', '', :id => "to_year#{i}") %>
     </div>
     <div class="<%= i == 0 ? "col-sm-3" : "col-sm-6" %> form-group form-inline">
       <%= label_tag(:"q#{i}", t('navbar.search_placeholder'),:class => 'sr-only repeats') %>
