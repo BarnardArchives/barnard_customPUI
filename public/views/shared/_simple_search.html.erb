@@ -1,0 +1,29 @@
+<%
+  show_header = true if show_header.nil?
+  header_size = '3' if header_size.nil?
+%>
+<div class="search" role="search">
+  <a name="search" id="search"></a>
+  <% if show_header %>
+  <h<%= header_size %>><%=  t('actions.search') %>  <%= title %> </h<%= header_size %>>
+  <% end %>
+  <% @search = Search.new unless defined?(@search) %>
+  <%= form_tag(app_prefix("#{search_url}"), method: 'get', :id => 'advanced_search') do %>
+  <div class="row search_row simple_search_row" id="search_row_0">
+    <div class="col-sm-8 form-group form-inline">
+      <%= label_tag(:"q0", t('navbar.search_placeholder'),:class => 'sr-only repeats') %>
+      <%= text_field_tag('q[]', @search[:q][0], :placeholder =>  t('navbar.search_placeholder'), :id => "q0", 
+            :class=> 'form-control repeats fill-column') %>
+    </div>
+    <div class="col-sm-2">
+      <%= hidden_field_tag('limit','', :id => 'limit') %>
+      <%= hidden_field_tag('op[]','', :id => 'op0') %>
+      <%= hidden_field_tag('field[]','', :id => 'field0') %>
+      <%= hidden_field_tag('from_year[]','', :id => 'from_year0') %>
+      <%= hidden_field_tag('to_year[]','', :id => 'to_year0') %>
+      <%= submit_tag(t('search-button.label'), :class=>'btn btn-primary', :id => 'submit_search') %>
+    </div>
+  </div>
+  <% end %>
+</div>
+<script type="text/javascript" >initialize_search();</script>
